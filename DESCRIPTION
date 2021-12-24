@@ -33,5 +33,5 @@ Imports:
     tidyr,
     dplyr
 Remotes:
-    ryantibs/best-subset
+    ryantibs/best-subset/bestsubset
 Config/testthat/edition: 3
