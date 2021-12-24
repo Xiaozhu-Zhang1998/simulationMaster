@@ -3,12 +3,15 @@
   
 This package builds a powerful Shiny App for people interested in statistical learning simulation, specifically for the regression task for sparse data and the classification task for data without linear decision boundary. We allow users to generate all different types of data and adjust model parameters, so they will have a direct understanding about their actions' influences through the corresponding changes in resulting visualization graphs.
 
-***Please read the vignette document for any details or demo of this Package/ Shiny App.***
+***Please read the vignette document for more details or demo of this Package/ Shiny App.***
 
 
 ## Package Dependency and Installation
 
-This package depends on a package `bestsubset` released on GitHub, so please install it by running the following code:
+This package depends on the following packages: `shinydashboard`, `shiny`, `bestsubset`, `glmnet`, `mvtnorm`, `patchwork`, `shinycssloaders`, `kernlab`, `ggplot2`, `tippy`, `tidyr`,
+and `dplyr`, so please have them installed before installing this package.
+
+Particularly, the package `bestsubset` was released on GitHub, so please install it by running the following code:
 ```
 library(devtools)
 install_github(repo = "ryantibs/best-subset", subdir = "bestsubset")
@@ -16,8 +19,7 @@ install_github(repo = "ryantibs/best-subset", subdir = "bestsubset")
 
 Then you can install and load our `simlationMaster` package by running the following code:
 ```
-install_github(repo = "Sta523-Fa21/final_proj_simulation_master", 
-               subdir = "simulationMaster")
+install_github(repo = "Xiaozhu-Zhang1998/simulationMaster")
 library(simulationMaster)
 ```
 
@@ -41,9 +43,9 @@ The user is able to see the **training MSE** and **cross-validation MSE**, and c
 For classification with kernel SVM, similar to the regression playground, the tuning panels include two parts, **data generation** and **model specification**. Users can choose different data types and other data generation parameters on the left panel and choose a specific kernel and its corresponding parameters for kernel SVM on the right panel to check the results under the desired conditions.
 
 ## R CMD check
-1. Since this is a package for only 1 function to trigger the Shiny App, we do not include any tests.
+1. Since this is a package for only one function to trigger the Shiny App, we do not include any tests.
 
-2. This package passes the `R CMD check`, i.e. there are no Errors, Warnings, or Notes. It is notable that we use the standard evaluation version of functions in the package `dplyr` to avoid any notes.
+2. This package passes the `R CMD check`, i.e. there are no Errors, Warnings, or Notes. It is notable that we use the standard evaluation version of functions in the package `dplyr` to avoid any Notes.
 
 ## Authors
 

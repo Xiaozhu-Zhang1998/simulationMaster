@@ -1,0 +1,37 @@
+Package: simulationMaster
+Title: A shiny app for simulation of glmnet and ksvm
+Version: 0.1.0
+Authors@R: c(
+  person("Xiaozhu", "Zhang", , "xz303@duke.edu", role = c("aut", "cre")),
+  person("Xinran", "Song", , "xs97@duke.edu", role = c("aut")),
+  person("Tong", "Lin", , "tl298@duke.edu", role = c("aut")),
+  person("Xuyang", "Tian", , "xt40@duke.edu", role = c("aut"))
+  )
+Description: What the package does (one paragraph).
+  text.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Imports: 
+    shinydashboard,
+    shiny,
+    bestsubset,
+    glmnet,
+    mvtnorm,
+    patchwork,
+    shinycssloaders,
+    kernlab,
+    ggplot2,
+    tippy,
+    tidyr,
+    dplyr
+Remotes:
+    ryantibs/best-subset
+Config/testthat/edition: 3
